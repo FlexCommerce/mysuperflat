@@ -1,0 +1,61 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header class="bk-header clearfix">
+    <div class="header-bg">
+         <div class="wrapper companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}            
+            <nav class="sz-nav">
+                {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+    
+</div>  
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'contactformheader', {"content":"<h3>Contact us</h3>"})|raw}}
+                {{widget('content', 'contactformcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                {{widget('contactform', 'contactform', {'text': 'Send &raquo;','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('content', 'mapheader', {"content":"<h3>How to find us?</h3>"})|raw}}
+                {{widget('map', 'mymap', {'height': '355', 'zoom': '15', 'address': 'profile'})|raw}}
+            </div>
+        </div>
+        <div class="responsivecolumns columns-four-25-25-25-25">
+            <div class="column columns-four-first f-phone">
+                {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}                            
+            </div>
+            <div class="column columns-four-second f-mail">
+                {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
+            </div>
+            <div class="column columns-four-third f-address">
+                {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
+            </div>
+            <div class="column columns-four-fourth f-time">
+                {{widget('content', 'f-time', {content: 'pon-pt : 8:00-17:00', lines: 'all'})|raw}}
+            </div>            
+        </div>            
+    </div>
+    <div>
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left f-copyright">
+                {{widget('profile', 'f-copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right f-socialicons">
+                {{widget('profile', 'f-socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}

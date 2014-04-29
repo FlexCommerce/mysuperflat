@@ -1,0 +1,1309 @@
+/* ===============================
+   IMPORT CSS
+   =============================== */
+
+@import "@{templateCommon}/basekit-bootstrap.less";
+
+
+/* ===============================
+   TEMPLATE CSS
+   =============================== */
+
+
+body {
+  background-color: @color-swatch1;
+  background-image: image('/images/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+.main h1, .main h2, .main h3, .main h4 {
+  font-weight: 400;
+}
+
+.bk-footer p {
+  background-color: transparent;
+}
+
+blockquote {
+  background:@color-swatch2;  
+  padding: 18px;
+  quotes:"\201C""\201D""\2018""\2019";
+  font-family:@font-swatch2-font-family;
+  font-size:@font-swatch2-font-size;
+  font-weight:@font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  margin: 0;
+}
+
+  blockquote:before {
+  font-family: georgia;
+  color: @color-swatch2;
+  content:open-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-right:.1em;
+  vertical-align:-.4em;
+}
+  blockquote p {
+  display: inline;
+  font-family: @font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height: @font-swatch2-line-height;
+  color: @font-swatch2-color;
+  background-color: transparent;
+}
+
+
+ul, ol, li {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+ul {
+list-style-type: square;
+}
+
+.bk-content-text ul, .bk-content-text ol, .bk-content-text li {
+  padding-left: 1.4em; 
+  text-indent: -1.4em;
+}
+
+
+
+/* ===============================
+   CUSTOM CSS
+   =============================== */
+
+.main {
+  padding: 10px 0;
+}
+
+/* DEFAULT PAGE TYPE */
+
+.bk-pt-default header {
+  border-bottom: 1px solid @color-swatch1;
+}
+
+/* ===============================
+   HEADER
+   =============================== */
+
+.bk-header {
+  padding: 0;
+}
+
+/* COMPANY NAME */
+
+/* LOGO */
+
+.widget.logo {
+  display: block;
+  margin-right: 10px;
+  float: left;
+}
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+.bk-footer {
+  padding: 1em 0;
+  background-color: @color-swatch6;
+  min-height: 150px;
+}
+
+.bk-footer p {
+  color: @color-swatch1;
+  padding-bottom: 5px;
+}
+
+.bk-footer ul, .bk-footer ol, .bk-footer li {
+  background-color: @color-swatch1;
+}
+
+
+/* ===============================
+   STANDARD NAVIGATION
+   =============================== */
+
+.widget.navigation {
+}
+
+.widget.navigation ul {
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.widget.navigation ul.align-center li
+{
+  text-align: center;
+}
+
+.widget.navigation ul.align-left li
+{
+  text-align: left;
+}
+
+.widget.navigation ul.align-right li
+{
+  text-align: right;
+}
+
+.widget.navigation ul li {
+  float: left;
+  display: block;
+  padding-right: 20px;
+}
+
+.widget.navigation ul li a {
+  display: block;
+  font-family:@font-swatch6-font-family;
+  font-size:@font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  color: @font-swatch6-color;
+  line-height:@font-swatch6-line-height;
+  letter-spacing: @font-swatch6-letter-spacing;
+}
+
+.widget.navigation ul li a:hover {
+  text-decoration: none;
+  color: @font-swatch6-color-hover;
+}
+
+/* ===============================
+   EXTENDED NAVIGATION
+   =============================== */
+
+.widget.extendednavigation {
+  float: right;
+  position: relative;
+  background-color: transparent;
+  max-width: 690px;
+}
+
+.widget.extendednavigation a.pull {
+  display: none;
+}
+
+.widget.extendednavigation ul {
+  float: left;
+  padding: 0;
+  margin: 10px 0 0;
+  background-color: @color-swatch1;
+}
+
+.widget.extendednavigation ul li {
+  float: left;
+  display: block;
+}
+
+.widget.extendednavigation ul li:hover {
+  color: @font-swatch6-color;
+  background-color: none;
+}
+
+
+/* FOLDER */
+
+
+/* ===============================
+   FEATURE
+   =============================== */
+
+
+/* FEATURE TITLE */
+
+/* FEATURE STRAPLINE */
+
+/* FEATURE BUTTON */
+
+.widget.feature button {
+  margin: 10px 0;
+  padding: 10px 20px 8px;
+  border: 0;
+  font-family: @font-swatch7-font-family;
+  font-weight:@font-swatch7-font-weight;
+  font-size: @font-swatch7-font-size;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  line-height: @font-swatch7-line-height;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.widget.feature button:hover 
+{
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+}
+
+
+/* ===============================
+   FEATURE LAYOUTS
+   =============================== */
+
+/* LEFT ALIGN */
+
+.widget.feature.align-left .content {
+  width: 100%;
+  text-align: left;
+}
+
+/* CENTER ALIGN */
+
+.widget.feature.align-center .content {
+  width: 100%;
+  text-align: center;
+}
+
+/* RIGHT ALIGN */
+
+.widget.feature.align-right .content {
+  width: 100%;
+  text-align: right;
+}
+
+/* BUTTON TOP RIGHT */
+
+.widget.feature.btn-top-right .content {
+  width: 100%;
+  text-align: left;
+}
+
+.widget.feature.btn-top-right h2{
+  vertical-align: middle;
+}
+
+.widget.feature.btn-top-right button{
+    vertical-align: middle;
+}
+
+/* ===============================
+   PAYPAL & DROPBOX BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal, .widget.dropbox .b-wrap .btn {
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  line-height: @font-swatch7-line-height;
+  color: @font-swatch7-color;
+  padding: 12px 10px 10px 45px;
+  border: none;
+}
+
+
+/* ===============================
+   BUTTON CSS
+   =============================== */
+
+.widget.button button
+{
+  padding: 10px 20px 8px;
+  border: none;
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  line-height: @font-swatch7-line-height;
+  color: @font-swatch7-color;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.widget.button button:hover 
+{
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+}
+
+/* ===============================
+   CONTENT CSS
+   =============================== */
+
+
+.widget.content
+{
+    padding: 10px 0 0;
+    overflow: hidden;
+}
+
+/* ===============================
+   IMAGE WIDGET
+   =============================== */
+
+.widget.image img
+{
+    display:block;
+    max-width: 100%;
+    border: 0;
+    border-width: 0;
+}
+
+.widget.image {
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin: 10px 0 0;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    color:  @font-swatch4-color;
+    text-decoration: none;
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image a:hover {
+  text-decoration: none;
+}
+
+.widget.image span.image-title:hover {
+  color: @font-swatch6-color-hover;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin:0 0 10px;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+    color: @font-swatch5-color;
+}
+
+/* ===============================
+   GALLERY WIDGET
+   =============================== */
+
+.widget.gallery
+{
+}
+
+.widget.gallery ul {
+    display:block;
+    margin: 0;
+    padding:0px;
+    list-style: none;
+}
+
+.widget.gallery li {
+    float: left;
+    position: relative;
+    width: 33.3%;
+    padding-bottom: 33%;
+    list-style-type: none;
+}
+
+.widget.gallery li  span.inner {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-color: @color-swatch1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.widget.gallery ul li.one-to-one span.inner
+{
+    background-size:100% 100%;
+}
+
+.widget.gallery ul li.portrait span.inner
+{
+    background-size:100% auto;
+}
+
+.widget.gallery ul li.landscape span.inner
+{
+    background-size:auto 100%;
+}
+
+.widget.gallery li span.inner {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    bottom: 16px;
+    overflow: hidden;
+}
+
+.widget.gallery li span.inner img {
+    display:none;
+}
+
+.widget.gallery ul:before,
+.widget.gallery ul:after {
+  content: " ";
+  display: table;
+}
+.widget.gallery ul:after {
+  clear: both;
+}
+.widget.gallery ul {
+  *zoom: 1;
+}
+
+.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -310px;
+    max-height: 200px;
+    width: 310px;
+    background: rgba(111,117,173,0.8);
+    padding: 15px 0;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch5-font-size;
+    font-family: @font-swatch5-font-family;
+    line-height:@font-swatch5-line-height;
+    color @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+.widget.gallery li span.inner:hover .title {
+   margin-bottom: 0;
+}
+
+.widget.gallery li span.inner .description {
+  display: none;
+}
+
+.widget.gallery li span.inner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Lightbox */
+
+.lb-data .lb-caption, .lb-data .lb-number {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:lighten(@font-swatch5-color,50%);
+}
+
+.lb-data .lb-number {
+  font-size:bkscale(@font-swatch5-font-size,0.9);
+}
+
+
+/* ===============================
+   DIVIDER WIDGET
+   =============================== */
+
+.widget.line {
+    padding: 20px 0;
+}
+
+hr.line {
+   background-color: darken(@color-swatch2,10%);
+   height: 1px;
+   width: 100%;
+   border: none;
+}
+
+hr.line.align-left {
+   margin: 20px auto 20px 0px;
+}
+
+hr.line.align-center {
+   margin: 20px auto;
+}
+
+hr.line.align-right {
+   margin: 20px 0px 20px auto;
+}
+
+
+/* ===============================
+   CLICK TO CALL WIDGET
+   =============================== */
+
+.widget.clicktocall {
+  padding: 10px 0;
+}
+
+.widget.clicktocall a {
+  background-color: @color-swatch1;
+  margin: 2.2em auto;
+  border: none;
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  color: @font-swatch5-color;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: default;
+}
+
+
+/* ===============================
+   REDIRECT WIDGET
+   =============================== */
+
+.widget.redirecttodesktop {
+    padding: 10px 0;
+}
+
+
+/* ===============================
+   TWITTER WIDGET
+   =============================== */
+
+
+.widget.twitter {
+}
+
+.widget.twitter a:hover {
+    text-decoration: underline;
+}
+
+.widget.twitter ul {
+    padding: 10px 0;
+    margin: 0;
+}
+
+.widget.twitter ul li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.widget.twitter ul li p {
+  padding: 0;
+}
+
+.widget.twitter ul li:first-child {
+    border-top: 1px solid #eee;
+}
+
+.widget.twitter ul li:last-child {
+    padding-bottom: 10px;
+}
+
+.widget.twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 20px;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+    font-family: @font-swatch4-font-family;
+    color: @color-swatch3;
+    font-size: @font-swatch4-font-size;
+    font-weight: bold;
+}
+
+/* ===============================
+   CONTACT FORM WIDGET
+   =============================== */
+
+.widget.contactform form {
+    display: block;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    background-color: transparent;    
+}
+
+.widget.contactform fieldset {
+    border: none;
+    padding: 0;
+}
+
+.widget.contactform fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@color-swatch1;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.contactform fieldset input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid @color-swatch1;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @color-swatch1;
+    text-indent: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.widget.contactform fieldset textarea {
+    height: 100px;
+    width: 100%;
+    border: 1px solid @color-swatch1;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @color-swatch1;
+    text-indent: 8px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: none;
+    padding: 0;
+}
+
+.widget.contactform fieldset button.btn {
+    padding: 10px 20px 8px;
+    margin: 0;
+    border: none;
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    line-height: @font-swatch7-line-height;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+  
+.widget.contactform fieldset button.btn:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+}
+
+
+/* ==================================================
+   SINGLE EMAIL FORM, SIGN UP FORM & BLOG SEARCH FORM
+   ================================================== */
+
+
+ .widget.signupform, .widget.profile form, .blog-search-form {
+    display: block;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: @color-swatch1;
+}
+
+.widget.profile fieldset, .widget.signupform fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.widget.profile fieldset label, .widget.signupform fieldset label, .blog-search-form label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight:@font-swatch4-font-weight;
+    line-height:@font-swatch4-line-height;
+    color:@font-swatch4-color;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.profile form fieldset input, .widget.signupform fieldset input, .blogsearch form input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid darken(@color-swatch2,6%);
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    background-color: @color-swatch1;
+    text-indent: 8px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float:left;
+    padding: 0;
+}
+
+.widget.profile fieldset button.btn, .widget.signupform fieldset button.btn, .blogsearch form button  {
+    padding: 12px 10px 10px;
+    border: none;    
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    line-height: @font-swatch7-line-height;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.widget.profile fieldset button.btn:hover, .widget.signupform fieldset button.btn:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
+
+/* ===============================
+   LINKED IN
+   =============================== */
+
+.container-outer .li-profile-container {
+  padding: 0;
+  margin: 0;
+
+}
+
+.no-profile {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+
+}
+
+
+/* ===============================
+   TWEET THIS WIDGET
+   =============================== */
+
+.widget.tweet {
+   padding: 14px 0; 
+}
+
+/* ===============================
+   PROFILE WIDGET
+   =============================== */
+
+.widget.profile span {
+  display: block;
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  line-height: @font-swatch5-line-height;
+  color: @font-swatch5-color;
+}
+
+.bk-footer .widget.profile span {
+  display: block;
+  font-family: @font-swatch5-font-family;
+  font-size: @font-swatch5-font-size;
+  line-height: @font-swatch5-line-height;
+  color: lighten(@color-swatch5,10%);
+}
+
+
+/*  TWITTER IN PROFILE DATA */
+
+.widget.profile .twitter a {
+   color: @color-swatch4;
+   font-size:@font-swatch5-font-size;
+   text-decoration: none;
+}
+
+.widget.profile .twitter a:hover {
+    text-decoration: underline;
+}
+
+.widget.profile .twitter {
+    padding: 0;
+    margin: 0;
+}
+
+.widget.profile .twitter li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    padding: 0;
+    border-bottom: none;
+}
+
+.widget.profile .twitter .twitter-profile-pic {
+    float: left;
+    margin-right: 20px;
+    height: 120px;
+}
+
+.widget.profile .twitter .twitter-profile-pic img {
+  
+}
+
+.widget.profile .twitter .twitter-content span.bk-full-name {
+    font-family: @font-swatch4-font-family;
+    color: @color-swatch3;
+    font-weight: bold;
+}
+
+.bk-footer .widget.profile .twitter span {
+  display: inline;
+}
+
+
+
+/*  SOCIAL ICONS IN PROFILE DATA */
+
+.widget.profile .bk-profile-socialicons span {
+    display: inline;
+    padding: 0;
+    text-align: left;
+    font-size:1em;
+    font-family:@font-swatch7-font-family;
+}
+
+.widget.profile .bk-profile-socialicons a {
+    text-decoration: none;
+    text-indent: -9999px;
+    white-space: nowrap;
+    height: 30px;
+    width: 30px;
+}
+
+.bk-profile-socialicons span a {
+    display: inline-block;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-color: @color-swatch2;
+    background-position: center;
+    margin-bottom: 6px;
+    background-size: 18px;
+}
+
+/* ===============================
+   SOCIAL BAR WIDGET
+   =============================== */
+
+.widget.socialicons {
+    padding: 0;
+    text-align: left;
+    font-size:1em;
+    font-family:@font-swatch7-font-family;
+}
+
+.widget.socialicons a {
+    text-decoration: none;
+    text-indent: -9999px;
+    white-space: nowrap;
+    height: 30px;
+    width: 30px;
+}
+
+.widget.socialicons span a {
+    display: inline-block;
+    margin-right: 6px;
+    background-repeat: no-repeat;
+    background-color: @color-swatch2;
+    background-position: center;
+    margin-bottom: 6px;
+    background-size: 18px;
+}
+
+/* SVG ICONS */
+
+
+/* PNG ICONS */
+
+.widget.socialicons span.bk-socialicons-twitter a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/tw.png');
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/li.png')
+}
+
+.widget.socialicons span.bk-socialicons-facebook a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/fb.png')
+}
+
+.widget.socialicons span.bk-socialicons-youtube a,
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/you.png')
+}
+
+
+/* ===============================
+   SLIDESHOW WIDGET
+   =============================== */
+
+.widget.responsiveslideshow {
+    .slideshow-image-list,
+    .slideshow-widget {
+        min-height: 450px;
+        @media @tablet {
+            min-height: 350px;
+        }
+        @media @mobile {
+            min-height: 280px;
+            height: 280px;
+        }
+    }
+    .title {
+        display: block;
+        color: @color-swatch5;
+    }
+    .description {
+        color: @color-swatch5;
+    }
+    .content-wrapper {
+        background: @color-swatch1;
+        text-align: center;
+
+    }
+    .slideshow-widget {
+        /* Arrows */
+        .btn-prev,
+        .btn-next {
+            font-size: 0;
+            z-index: 11;
+            text-indent: -99999px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+        .btn-prev {
+            &:after {
+                content: "\2190";
+                color: #fff;
+                top: 7px;
+            }
+        }
+        .btn-next {
+            &:after {
+                content: "\2192";
+                color: #fff;
+                top: 7px;
+            }
+        }
+        /* Play Button */
+        .btn-play {
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            left: 45%;
+            top: 43%;
+            &:after {
+                color: #fff;
+                letter-spacing: -4px;
+                top: 2px;
+            }
+            @media @mobile {
+                width: 40px;
+                height: 40px;
+                &:after {
+                    font-size: 15px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+    /* Slideshow Controls */
+    .slideshow-widget-controls {
+        .dot {
+            width: 11px;
+            height: 11px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            &.selected {
+                background-color: @color-swatch3;
+            }
+        }
+    }
+}
+
+
+/* ===============================
+   MAP WIDGET
+   =============================== */
+
+
+
+
+/* ===============================
+  BLOG
+   =============================== */
+
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            border-bottom: 1px dotted @color-swatch7;
+        }
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    text-align: left;
+}
+
+.blog-post-more-link {
+float: left;
+width: 100%;
+}
+
+/* ===============================
+   MENU SECTIONS NAVIGATION
+   =============================== */
+
+
+.widget {
+    &.menusections {
+        text-align: center;
+        padding: 0;
+        min-height: 30px;
+        @media only screen and (max-width: 850px) {
+            width:100%;
+            margin: 0 auto;
+            margin-top: 1.5em;
+        }
+        @media only screen and (max-width: 550px) {
+            padding:0;
+            margin-top:0;
+            padding: 0 0 0;
+        }
+        ul {
+            display: table;
+            width: 100%;
+            margin: 0 auto;
+            list-style: none;
+            padding: 0;
+            li {
+                display: inline-block;
+                padding: 1em 0.8em;
+                margin: 0;
+                @media only screen and (max-width: 550px) {
+                    width: 100%;
+                    border-bottom: 1px solid fade(@color-swatch4,20%);                }
+                }
+                a {
+                    display: block;
+                    font-family:@font-swatch6-font-family;
+                    font-size:@font-swatch6-font-size;
+                    font-weight: @font-swatch6-font-weight;
+                    color: @font-swatch5-color;
+                    line-height:@font-swatch6-line-height;
+                    letter-spacing: @font-swatch6-letter-spacing;
+                    &:hover {
+                        color: @color-swatch5;
+                        text-decoration: underline;
+                    }
+                }
+        }
+    }
+}
+
+/* ===============================
+   MENU
+   =============================== */
+
+.widget {
+    &.menu {
+        margin-top: 0.3em;
+        float: left;
+        width: 100%;
+        .main {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            border-top: 0;
+            display: none;
+            &.selected {
+                display: block;
+                float: left;
+                @media only screen and (max-width: 850px) {
+                    width: 100%;
+                    margin: 0;
+                    padding: 10px 0;
+                }
+            }
+
+            /* ITEMS */
+
+               .menu-items {
+                    li { /* menu-item */
+                        position: relative;
+                        display: block;
+                        padding-bottom: 2em;
+                        margin-bottom: 0;
+                        width: 100%;
+                        &.menu-item-promoted { /* menu-item-promoted */
+                                display: inline-block;
+                                .inner-item {
+                                    h3 {
+                                         &:before {
+                                            content: "\2605";
+                                            color: @color-swatch3;
+                                            font-size: 25px;
+                                            display: inline-block;
+                                            margin: 0 10px 0 0;
+                                            position: relative;
+                                            top: 0;
+                                            left: 0;
+                                        }
+                                    }
+                                }
+                        }/* end menu-item-promoted */
+
+                        .inner-item {
+                            display: inline-block;
+                            width: 100%;
+                            .menu-item-image-wrap {
+                                background-size:cover;
+                                background-repeat: no-repeat;
+                                height: 200px;
+                                background-position: center;
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
+                                img {
+                                    display: none;
+                                }
+                            }
+                            .menu-section-item-dietary-props {
+                                float: left;
+                                width: 100%;
+                                margin-top: 0px;
+                                padding: 0 0 0 1px;
+                               .dietary-icon {
+                                    border: 1px dotted @color-swatch4;
+                                    width: auto;
+                                    font-family:@font-swatch5-font-family;
+                                    font-size:@font-swatch5-font-size;
+                                    display: inline-block;
+                                    z-index: 9999999;
+                                    color: @color-swatch5;
+                                    float: none;
+                                    margin-right: 0px;
+                                    margin-bottom: 5px;
+                                    padding: 0 7px;
+                                }
+                                .not-spicy-icon {
+                                    display: none;
+                                }
+                            } /* end menu-section-item-dietary-props */   
+
+
+                            .menu-item-description, .menu-section-item-description {
+                                margin-bottom: 0.5em;
+                            }
+
+                        } /* end inner-item */
+
+                    } /* end li menu-item */
+
+                } /* end ol */  
+
+                .menu-subsection {
+                  padding: 0;
+                }
+
+                .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
+                    border: 1px dotted fade(@color-swatch4,50%);
+                    padding: 0 2em 2em;
+                    margin: 2em 0 1em;
+                    position: relative;
+                    @media @mobile {
+                        padding: 0 2em 0;
+                    }
+                    .menu-subsection-header {
+                        margin: 20px 0;
+                        padding: 2em 0 0.2em;
+                        text-align: center;
+                        @media @mobile {
+                            padding: 0;
+                        }
+                    }
+                } /* end PROMOTED SUB-SECTION */
+
+                .menu-info {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    p { /* menu-note */
+                      float: left;
+                      width: 100%;
+                      padding: 2em 0;
+                      color: @color-swatch3;
+                    }
+                } /* end menu-info */
+        } /* end main */
+    } /* end .widget.menu */
+} /* end .widget */
+
+
+/* ===============================
+   CW001
+   =============================== */
+
+ 
+
+/* ===============================
+   CLEARFIX
+   =============================== */
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+
+ 

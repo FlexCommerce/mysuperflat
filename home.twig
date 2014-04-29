@@ -1,0 +1,104 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header class="bk-header clearfix">
+    <div class="header-bg">
+         <div class="wrapper companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}            
+            <nav class="sz-nav">
+                {{widget('extendednavigation', 'navigationheader', {})|raw}}
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="main wrapper clearfix">
+    <section class="homemaintext-sz">
+        {{widget('content', 'maintextheader', {"content":"<h3>Aliquam Sodales</h3>"})|raw}}
+        {{widget('content', 'maintextcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+        {{widget('button', 'mainbutton', {text:'SHOW SITE &raquo;', 'align':'widget-align-center'})|raw}}
+    </section>
+    <section>
+        <div class="responsivecolumns columns-three-33-34-33">
+            <div class="column columns-three-left">
+                {{widget('content', 'c1-header', {"content":"<h3>What we do?</h3>"})|raw}}
+                {{widget('content', 'c1-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                {{widget('button', 'c1-button2', {text:'SHOW SITE &raquo;', 'align':'widget-align-center'})|raw}}
+            </div>
+            <div class="column columns-three-middle">
+                {{widget('content', 'c2-header', {"content":"<h3>Why us?</h3>"})|raw}}
+                {{widget('content', 'c2-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                {{widget('button', 'c2-button2', {text:'SHOW SITE &raquo;', 'align':'widget-align-center'})|raw}}
+            </div>
+            <div class="column columns-three-right">
+                {{widget('content', 'c3-header', {"content":"<h3>Who we are?</h3>"})|raw}}
+                {{widget('content', 'c3-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                {{widget('button', 'c3-button2', {text:'SHOW SITE &raquo;', 'align':'widget-align-center'})|raw}}
+            </div>
+        </div>
+    </section>
+    <section>
+        {{widget('content', 'f-gallery-header', {"content":"<h3>The Gallery</h3>"})|raw}}
+        {{widget('gallery', 'f-gallery', {'showTitle': true,images':[{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'},{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'},{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'},{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'}]})|raw}}
+    </section>
+    <section>
+        <div class="wrapper clearfix">
+            <div class="widget responsivecolumns columns-two-66-34">
+                <div class="column columns-two-left offer">
+                    {{widget('content', 'offer-header', {"content":"<h3>Our Offer</h3>"})|raw}}
+                    {{widget('content', 'offer-content', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                    {{widget('button', 'offer-button2', {text:'SHOW SITE &raquo;', 'align':'widget-align-center'})|raw}}
+                </div>
+                <div class="column columns-two-right benefits">
+                    {{widget('content', 'benefits-header', {"content":"<h3>Benefits</h3>"})|raw}}
+                    {{widget('content', 'benefits-content', {"content":"<p>Quisque lorem tortor fringilla sed,</p><p>Id, eleifend justo vel bibendum sapien massa,</p><p>Ac turpis faucibus orci luctus non,</p>"})|raw}}
+                </div>
+            </div>
+        </div>        
+    </section>    
+    {{zone('main')|raw}}
+    
+</div>  
+
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'contactformheader', {"content":"<h3>Contact us</h3>"})|raw}}
+                {{widget('content', 'contactformcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
+                {{widget('contactform', 'contactform', {'text': 'Send &raquo;','formTitle': 'Contact Form', 'email': 'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('content', 'mapheader', {"content":"<h3>How to find us?</h3>"})|raw}}
+                {{widget('map', 'mymap', {'height': '355', 'zoom': '15', 'address': 'profile'})|raw}}
+            </div>
+        </div>
+        <div class="responsivecolumns columns-four-25-25-25-25">
+            <div class="column columns-four-first f-phone">
+                {{widget('profile', 'f-phone', { 'profileType':'phone', 'phone':'profile'})|raw}}                            
+            </div>
+            <div class="column columns-four-second f-mail">
+                {{widget('profile', 'f-mail', { 'profileType':'email', 'email':'profile'})|raw}}
+            </div>
+            <div class="column columns-four-third f-address">
+                {{widget('profile', 'f-address', { 'profileType':'address', 'address':'profile'})|raw}}
+            </div>
+            <div class="column columns-four-fourth f-time">
+                {{widget('content', 'f-time', {content: 'pon-pt : 8:00-17:00', lines: 'all'})|raw}}
+            </div>            
+        </div>            
+    </div>
+    <div>
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left f-copyright">
+                {{widget('profile', 'f-copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right f-socialicons">
+                {{widget('profile', 'f-socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
