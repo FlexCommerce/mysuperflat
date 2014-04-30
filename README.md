@@ -1,4 +1,4 @@
-basekit-baseplate
+mysuperflat
 =================
 
 An essentials template for BaseKit development
