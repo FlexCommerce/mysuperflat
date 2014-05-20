@@ -2,14 +2,15 @@
 
 {% block content %}
 
-<header class="bk-header clearfix">
-    <div class="header-bg">
-         <div class="wrapper companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}            
-            <nav class="sz-nav">
-                {{widget('extendednavigation', 'navigationheader', {})|raw}}
-            </nav>
+<header class="bk-header">
+    <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+          {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+          {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
+        <div class="menu-sz">
+          {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </div>        
     </div>
 </header>
 
@@ -46,7 +47,7 @@
             </div>            
         </div>            
     </div>
-    <div>
+    <div class="wrapper clearfix sz-footer">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left f-copyright">
                 {{widget('profile', 'f-copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}

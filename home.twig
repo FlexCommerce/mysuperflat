@@ -2,23 +2,23 @@
 
 {% block content %}
 
-<header class="bk-header clearfix">
-    <div class="header-bg">
-         <div class="wrapper companyheader clearfix">
-            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}            
-            <nav class="sz-nav">
-                {{widget('extendednavigation', 'navigationheader', {})|raw}}
-            </nav>
+<header class="bk-header">
+    <div class="wrapper clearfix">
+        <div class="companyheader clearfix">
+          {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+          {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         </div>
+        <div class="menu-sz">
+          {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </div>        
     </div>
 </header>
 
+<section>
+  {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+</section>
+
 <div class="main wrapper clearfix">
-    <section class="homemaintext-sz">
-        {{widget('content', 'maintextheader', {"content":"<h3>Aliquam Sodales</h3>"})|raw}}
-        {{widget('content', 'maintextcontent', {"content":"<p>Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend</p>"})|raw}}
-        {{widget('button', 'mainbutton', {text:'SHOW SITE &raquo;', 'align':'widget-align-center'})|raw}}
-    </section>
     <section>
         <div class="responsivecolumns columns-three-33-34-33">
             <div class="column columns-three-left">
@@ -40,7 +40,7 @@
     </section>
     <section>
         {{widget('content', 'f-gallery-header', {"content":"<h3>The Gallery</h3>"})|raw}}
-        {{widget('gallery', 'f-gallery', {'showTitle': true,images':[{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'},{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'},{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'},{'imageHeight':'310', 'imageWidth':'310', 'url':'http://placehold.it/310x310', 'title':'test title', 'description': 'test desc'}]})|raw}}
+        {{widget('gallery', 'thisunqiuewidgetname', {'showTitle':'true','images':[{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'},{'imageHeight':'350', 'imageWidth':'300', 'url':'http://placehold.it/350x300', 'title':'test title', 'description': 'test desc'}]})|raw}}
     </section>
     <section>
         <div class="wrapper clearfix">
@@ -89,7 +89,7 @@
             </div>            
         </div>            
     </div>
-    <div>
+    <div class="wrapper clearfix sz-footer">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left f-copyright">
                 {{widget('profile', 'f-copyright', { 'profileType':'copyright', 'copyright':'profile'})|raw}}
