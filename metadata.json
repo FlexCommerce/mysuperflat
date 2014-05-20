@@ -20,11 +20,11 @@
     "fontSwatch": {
        "title": "Lato",
         "font1": {
-            "font-family": "\"Signika\", Geneva, Tahoma, sans-serif",
-            "font-size": "60px",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "40px",
             "font-weight": "bold",
             "line-height": "60px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
@@ -79,9 +79,9 @@
             "background-color-hover": "@color-swatch3"
         },
         "font8": {
-            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-family": "\"Lobster\", Verdana, sans-serif",
             "font-size": "40px",
-            "font-weight": "700",
+            "font-weight": "400",
             "line-height": "60px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
