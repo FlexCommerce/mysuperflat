@@ -3,7 +3,9 @@
 	"thumbnail":"mysuperflat.png",
 	"screenshot":"mysuperflat.png",
     "tags": {
-        "en": ["Business", "Trade", "company", "business", "corporate", "finance", "financial", "firm", "money", "simple"]        
+    "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
+    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
+    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estĂşdio", "website", "criativo", "elegante", "profissional", "Ăşnico", "mĂ­dia", "sans-serif"]  
     },
     "colorSwatches":
     {
@@ -66,7 +68,9 @@
             "line-height": "26px",
             "color": "@color-swatch1",
             "color-hover": "@color-swatch6",
-            "letter-spacing": "inherit"
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
         },
         "font7": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
