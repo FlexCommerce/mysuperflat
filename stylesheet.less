@@ -337,7 +337,6 @@ footer.bk-footer span {
 }
 
 .widget.extendednavigation ul {
-  float: left;
   margin: 0;
   padding: 0;
 }
@@ -357,8 +356,7 @@ footer.bk-footer span {
 }
 
 .widget.extendednavigation ul li {
-  float: left;
-  display: block;
+  display: inline-block;
 }
 
 .widget.extendednavigation ul li.folder {
@@ -370,7 +368,7 @@ footer.bk-footer span {
       border-top-color: @color-swatch2;
 }
 .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-  display: block;
+  display: inline-block;
   padding: 10px 25px;
   font-family:@font-swatch6-font-family;
   font-size:@font-swatch6-font-size;
@@ -417,13 +415,13 @@ footer.bk-footer span {
   background-color: @color-swatch2;
   padding: 0;
 }
-
+.widget.extendednavigation ul li:hover ul li:hover,
 .widget.extendednavigation ul li:hover ul li a span.text:hover {
     background-color: @color-swatch4;
 }
 
 .widget.extendednavigation li:hover > ul > li {
-  display: block;
+  display: inline-block;
   width: 100%;
   text-align: left!important;
   padding: 0;
