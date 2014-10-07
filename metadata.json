@@ -1,6 +1,8 @@
 {
 	"name":"MySuperFlat",
 	"thumbnail":"mysuperflat.png",
+  "templateType":"standard",
+  "pageTypes":["default","home"],
 	"screenshot":"mysuperflat.png",
     "tags": {
     "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
